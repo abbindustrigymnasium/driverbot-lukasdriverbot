@@ -53,6 +53,9 @@ USER INPUT HANDLER:
         SEND MQTT MESSAGE "RIGHT"
 </pre>
 </code>
+<h2>Skiss av webbsida</h2>
+<img src = "https://github.com/abbindustrigymnasium/driverbot-lukasdriverbot/blob/main/Skiss.jpg?raw=true"> <img>
+
 <h2>Tidsplan</h2>
 <pre>
 <code>
