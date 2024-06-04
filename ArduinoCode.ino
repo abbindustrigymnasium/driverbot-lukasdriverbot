@@ -114,35 +114,5 @@ void loop() {
     
     // Run MQTT client loop to handle incoming messages and send messages
     client.loop();
-
-    // Check for motor overheating and stop movement if necessary
-    if (motor_overheating()) {
-        analogWrite(motorPinRightSpeed, 0);
-        delay(1000);
-        motor_cool_down();
-    }
-
-    // Check for servo overheating and stop movement if necessary
-    if (servo_overheating()) {
-        steeringServo.detach();
-        delay(1000);
-        steeringServo.attach(SERVO_PIN);
-    }
 }
 
-// Functions to check for motor overheating and cool down components
-bool motor_overheating() {
-
-}
-
-void motor_cool_down() {
-  
-}
-
-bool servo_overheating() {
-  
-}
-
-void servo_cool_down() {
-  
-}
