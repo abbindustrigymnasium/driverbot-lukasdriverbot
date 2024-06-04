@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- This HTML file provides a simple web interface for controlling a robot using MQTT protocol. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket MQTT</title>
+  <link rel="stylesheet" href="webstyles.css">
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>MQTT Button Control</h1>
+    <div class="button-container">
+      <button class="control-button" id="upButton">Forward</button>
+      <button class="control-button" id="downButton">Backwards</button>
+      <button class="control-button" id="leftButton">Left</button>
+      <button class="control-button" id="rightButton">Right</button>
+      <button class="control-button" id="stopButton">Stop</button>
+    </div>
+    <div id="status" class="status">Status: Not connected</div>
+    <div id="log" class="log"></div>
+  </div>
+  <script src="Web.js"></script>
+</body>
+</html>
